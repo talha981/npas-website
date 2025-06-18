@@ -78,46 +78,14 @@ const UnderConstructionPage = () => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          {/* Animated Stars Background */}
-          <div className="absolute inset-0">
-            {[...Array(40)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute animate-pulse"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 3}s`,
-                  animationDuration: `${2 + Math.random() * 3}s`
-                }}
-              >
-                <Star className="w-1 h-1 text-gray-300" />
-              </div>
-            ))}
-          </div>
 
-          {/* Floating Icons */}
-          <div className="absolute inset-0">
-            {[Wrench, Zap, Clock].map((Icon, i) => (
-              <div
-                key={i}
-                className="absolute animate-bounce"
-                style={{
-                  left: `${20 + i * 30}%`,
-                  top: `${20 + i * 15}%`,
-                  animationDelay: `${i * 0.5}s`,
-                  animationDuration: '3s'
-                }}
-              >
-                <Icon className="w-4 h-4 text-purple-300 opacity-50" />
-              </div>
-            ))}
-          </div>
+
+        
 
           <div className="relative z-10 h-full flex items-center justify-center px-4 py-20">
             <div className="text-center max-w-4xl mx-auto">
             
-            
+
 
               <h1 className={`text-4xl md:text-6xl font-bold mb-4 animate-fade-in bg-gradient-to-r ${message.gradient} bg-clip-text text-transparent`}>
                 {message.title}
