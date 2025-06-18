@@ -106,7 +106,7 @@ const NavigationConfiguration = () => {
   return (
     <nav className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 shadow-lg border-b border-purple-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24  ">
           {/* Logo and Brand */}
           <NavLink to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="relative">
