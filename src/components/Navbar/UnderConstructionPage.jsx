@@ -117,6 +117,7 @@ const UnderConstructionPage = () => {
           <div className="relative z-10 h-full flex items-center justify-center px-4 py-20">
             <div className="text-center max-w-4xl mx-auto">
             
+            
 
               <h1 className={`text-4xl md:text-6xl font-bold mb-4 animate-fade-in bg-gradient-to-r ${message.gradient} bg-clip-text text-transparent`}>
                 {message.title}
