@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'; // Remove Router import
 import NavigationConfiguration from './components/Navbar/NavigationConfiguration';
 import Homepage from './pages/homePage';
 import UnderConstructionPage from './components/Navbar/UnderConstructionPage';
+import AboutPage from './pages/aboutPage';
+import TeamPage from './pages/TeamPage/TeamPage';
 
 // Dummy Components for Route Testing
 const Home = () => <div className="p-4 bg-black text-white">Home Page</div>;
@@ -21,10 +23,12 @@ const App = () => {
       <NavigationConfiguration />
 
       {/* Page Content */}
+      <div className='pt-24'>
+
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<UnderConstructionPage />} />
-        <Route path="/teams" element={<UnderConstructionPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/teams" element={<TeamPage />} />
         <Route path="/events" element={<UnderConstructionPage />} />
         <Route path="/blog" element={<UnderConstructionPage />} />
         <Route path="/gallery" element={<UnderConstructionPage />} />
@@ -32,6 +36,7 @@ const App = () => {
         <Route path="/contact" element={<UnderConstructionPage />} />
         <Route path="/login" element={<UnderConstructionPage />} />
       </Routes>
+      </div>
     </>
   );
 };
